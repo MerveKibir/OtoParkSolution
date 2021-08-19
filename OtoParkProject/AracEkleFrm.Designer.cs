@@ -232,32 +232,38 @@ namespace OtoParkProject
             // 
             // abonelikEkleBtn
             // 
+            this.abonelikEkleBtn.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.abonelikEkleBtn.Appearance.Options.UseFont = true;
             this.abonelikEkleBtn.AutoSize = true;
             this.abonelikEkleBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("abonelikEkleBtn.ImageOptions.Image")));
             this.abonelikEkleBtn.Location = new System.Drawing.Point(19, 584);
             this.abonelikEkleBtn.Name = "abonelikEkleBtn";
-            this.abonelikEkleBtn.Size = new System.Drawing.Size(125, 36);
+            this.abonelikEkleBtn.Size = new System.Drawing.Size(138, 36);
             this.abonelikEkleBtn.TabIndex = 1;
             this.abonelikEkleBtn.Text = "Abonelik Ekle";
             // 
             // aracListeBtn
             // 
+            this.aracListeBtn.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.aracListeBtn.Appearance.Options.UseFont = true;
             this.aracListeBtn.AutoSize = true;
             this.aracListeBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("aracListeBtn.ImageOptions.Image")));
             this.aracListeBtn.Location = new System.Drawing.Point(988, 584);
             this.aracListeBtn.Name = "aracListeBtn";
-            this.aracListeBtn.Size = new System.Drawing.Size(101, 36);
+            this.aracListeBtn.Size = new System.Drawing.Size(111, 36);
             this.aracListeBtn.TabIndex = 123;
             this.aracListeBtn.Text = "Araç Liste";
             this.aracListeBtn.Click += new System.EventHandler(this.aracListeBtn_Click);
             // 
             // aracEkle
             // 
+            this.aracEkle.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.aracEkle.Appearance.Options.UseFont = true;
             this.aracEkle.AutoSize = true;
             this.aracEkle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("aracEkle.ImageOptions.Image")));
             this.aracEkle.Location = new System.Drawing.Point(1139, 584);
             this.aracEkle.Name = "aracEkle";
-            this.aracEkle.Size = new System.Drawing.Size(100, 36);
+            this.aracEkle.Size = new System.Drawing.Size(109, 36);
             this.aracEkle.TabIndex = 122;
             this.aracEkle.Text = "Araç Ekle";
             this.aracEkle.Click += new System.EventHandler(this.aracEkle_Click);
@@ -503,11 +509,13 @@ namespace OtoParkProject
             // 
             // simpleButton1
             // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.AutoSize = true;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(1140, 5);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(85, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(91, 36);
             this.simpleButton1.TabIndex = 128;
             this.simpleButton1.Text = "Kaydet";
             this.simpleButton1.Click += new System.EventHandler(this.aracKaydet_Click);
@@ -534,11 +542,13 @@ namespace OtoParkProject
             // 
             // aracBulBtn
             // 
+            this.aracBulBtn.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.aracBulBtn.Appearance.Options.UseFont = true;
             this.aracBulBtn.AutoSize = true;
-            this.aracBulBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.aracBulBtn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("aracBulBtn.ImageOptions.Image")));
             this.aracBulBtn.Location = new System.Drawing.Point(1128, 5);
             this.aracBulBtn.Name = "aracBulBtn";
-            this.aracBulBtn.Size = new System.Drawing.Size(92, 36);
+            this.aracBulBtn.Size = new System.Drawing.Size(100, 36);
             this.aracBulBtn.TabIndex = 129;
             this.aracBulBtn.Text = "Araç Bul";
             this.aracBulBtn.Click += new System.EventHandler(this.aracBulBtn_Click);

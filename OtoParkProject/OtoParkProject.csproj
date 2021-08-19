@@ -167,10 +167,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aboneliks.cs" />
-    <Compile Include="AbonelikTip_TB.cs" />
-    <Compile Include="Abonelik_TB.cs" />
-    <Compile Include="Abonelik_Tip.cs" />
+    <Compile Include="AboneFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboneFrm.Designer.cs">
+      <DependentUpon>AboneFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaSayfa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,50 +191,162 @@
     <Compile Include="AracEkleFrm.Designer.cs">
       <DependentUpon>AracEkleFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Aracs.cs" />
-    <Compile Include="AracTip_TB.cs" />
-    <Compile Include="Arac_TB.cs" />
-    <Compile Include="Arac_Tip.cs" />
     <Compile Include="CariEkleFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CariEkleFrm.Designer.cs">
       <DependentUpon>CariEkleFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caris.cs" />
-    <Compile Include="Cari_TB.cs" />
-    <Compile Include="CekiciFirmas.cs" />
-    <Compile Include="CekiciFirma_TB.cs" />
-    <Compile Include="CekiciHareketleri_TB.cs" />
-    <Compile Include="Classes\DatabaseContext.cs" />
-    <Compile Include="C__MigrationHistory.cs" />
-    <Compile Include="EhliyetBilgi_TB.cs" />
-    <Compile Include="EkipPolis_TB.cs" />
-    <Compile Include="FaturaTip_TB.cs" />
-    <Compile Include="Fatura_TB.cs" />
-    <Compile Include="GelirTip_TB.cs" />
-    <Compile Include="GiderTip_TB.cs" />
-    <Compile Include="Gider_TB.cs" />
-    <Compile Include="KasaHareketleri_TB.cs" />
+    <Compile Include="Classes\AbonelikArac_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Aboneliks.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AbonelikTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Abonelik_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Abonelik_Tip.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Aracs.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AracTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Arac_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Arac_Tip.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Caris.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Cari_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CekiciFirmas.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CekiciFirma_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CekiciHareketleri_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\C__MigrationHistory.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DbContext.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbContext.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DbContext.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\DbContext.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbContext.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\EhliyetBilgi_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\EkipPolis_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\FaturaTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Fatura_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\GelirTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\GiderTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Gider_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\KasaHareketleri_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Odeme_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Personels.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Personel_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Ruhsat1_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Ruhsat2_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Sirketler_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Sirkets.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Subeler_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Subes.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Surucu_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Tarifes.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\TarifeTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Tarife_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Tarife_Tip.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\TrafikEkip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\YediEminCikisKayit_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\YediEminGirisKayit_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\YediEminHasar_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\YetkiTip_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Yetki_TB.cs">
+      <DependentUpon>DbContext.tt</DependentUpon>
+    </Compile>
     <Compile Include="LoginFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginFrm.Designer.cs">
       <DependentUpon>LoginFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs" />
-    <Compile Include="Models\Abonelik.cs" />
-    <Compile Include="Models\Abonelik_Tip.cs" />
-    <Compile Include="Models\Arac.cs" />
-    <Compile Include="Models\Arac_Tip.cs" />
-    <Compile Include="Models\Cari.cs" />
-    <Compile Include="Models\CekiciFirma.cs" />
-    <Compile Include="Models\Personel.cs" />
-    <Compile Include="Models\Sirket.cs" />
-    <Compile Include="Models\Sube.cs" />
-    <Compile Include="Models\Tarife.cs" />
-    <Compile Include="Models\Tarife_Tip.cs" />
-    <Compile Include="Odeme_TB.cs" />
     <Compile Include="OtoPark_DatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -263,8 +377,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OtoPark_DatabaseDataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Personels.cs" />
-    <Compile Include="Personel_TB.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AnaFrm.cs">
@@ -279,23 +391,15 @@
     <Compile Include="CariBul.Designer.cs">
       <DependentUpon>CariBul.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ruhsat1_TB.cs" />
-    <Compile Include="Ruhsat2_TB.cs" />
-    <Compile Include="Sirketler_TB.cs" />
-    <Compile Include="Sirkets.cs" />
-    <Compile Include="Subeler_TB.cs" />
-    <Compile Include="Subes.cs" />
-    <Compile Include="Surucu_TB.cs" />
-    <Compile Include="Tarifes.cs" />
-    <Compile Include="TarifeTip_TB.cs" />
-    <Compile Include="Tarife_TB.cs" />
-    <Compile Include="Tarife_Tip.cs" />
-    <Compile Include="TrafikEkip_TB.cs" />
-    <Compile Include="YediEminCikisKayit_TB.cs" />
-    <Compile Include="YediEminGirisKayit_TB.cs" />
-    <Compile Include="YediEminHasar_TB.cs" />
-    <Compile Include="YetkiTip_TB.cs" />
-    <Compile Include="Yetki_TB.cs" />
+    <Compile Include="TarifeAyarları.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarifeAyarları.Designer.cs">
+      <DependentUpon>TarifeAyarları.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboneFrm.resx">
+      <DependentUpon>AboneFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnaSayfa.resx">
       <DependentUpon>AnaSayfa.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +432,16 @@
     <EmbeddedResource Include="CariBul.resx">
       <DependentUpon>CariBul.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TarifeAyarları.resx">
+      <DependentUpon>TarifeAyarları.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Classes\DbContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DbContext.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Classes\DbContext.edmx.diagram">
+      <DependentUpon>DbContext.edmx</DependentUpon>
+    </None>
     <None Include="OtoPark_DatabaseDataSet.xsc">
       <DependentUpon>OtoPark_DatabaseDataSet.xsd</DependentUpon>
     </None>
@@ -440,6 +554,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\service1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Classes\DbContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbContext.edmx</DependentUpon>
+      <LastGenOutput>DbContext.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Classes\DbContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DbContext.edmx</DependentUpon>
+      <LastGenOutput>DbContext.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

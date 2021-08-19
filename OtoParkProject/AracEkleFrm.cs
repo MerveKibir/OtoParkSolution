@@ -1,6 +1,5 @@
 ﻿using DevExpress.XtraEditors;
 using OtoParkProject.Classes;
-using OtoParkProject.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,7 +59,7 @@ namespace OtoParkProject
                            select a.CekiciFirmaId).Single();
             if (plakaTE != null && cariCB != null && aracTipi != null)
             {
-                Arac newArac = new Arac();
+                Arac_TB newArac = new Arac_TB();
                 if (!context.Arac_TB.Any(x => x.Plaka == plakaTE.Text))
                 {
                     try
@@ -112,7 +111,7 @@ namespace OtoParkProject
                         var liste2 = from upArac in context.Arac_TB
                                      where upArac.Plaka == plakaTE.Text
                                      select upArac;
-                        foreach (Arac arac in liste2)
+                        foreach (Arac_TB arac in liste2)
                         {
                             arac.CariId = idBul(cariCB.Text);
                             arac.Marka = markaTE.Text;
@@ -251,6 +250,30 @@ namespace OtoParkProject
         {
             aracEkle.Visible = true;
             aracListeBtn.Visible = true;
+            Arac_TB aracim = new Arac_TB();
+
+            aracim.Marka = markaTE.Text;
+            aracim.Model = modelTE.Text;
+            aracim.Plaka = plakaTE.Text;
+            aracim.Renk = renkTE.Text;
+            aracim.Aciklama = aciklamaTE.Text;
+            aracim.AracTanim = aracTanimTE.Text;
+            aracim.EhliyetSinifi = ehliyetSinifiTE.Text;
+            aracim.AracTipId = context.AracTip_TB.Where(p => p.AracTip == aracTipi.Text).SingleOrDefault().ID;
+            if (cekiciFirmaTE.Text != "")
+            {
+                aracim.CekiciFirmaId = context.CekiciFirma_TB.Where(p => p.FirmaAd == cekiciFirma.Text).SingleOrDefault().ID;
+            }
+            if(kmUcretTE.Text!="")
+            {
+                decimal km = Convert.ToDecimal(kmUcretTE.Text);
+                aracim.KmUcret = context.Arac_TB.Where(p => p.KmUcret == km).SingleOrDefault().KmUcret;
+            }
+            aracim.YediEminMi = yediEminMi.Checked;
+            aracim.AktifMi = aktiflik.Checked;
+            aracim.CariId = context.Cari_TB.Where(p => p.TCNo == cariCB.Text).SingleOrDefault().ID;
+            context.Arac_TB.Add(aracim);
+            context.SaveChanges();
             var result = MessageBox.Show("Başka araç eklemek istiyor musunuz?", "Araç Ekle", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
@@ -274,12 +297,11 @@ namespace OtoParkProject
                 if (sonuc == DialogResult.OK)
                 {
                     int deger1 = Convert.ToInt32(form.donecekDeger1);
-                    Model1 db = new Model1();
-                    var listesi = db.Arac_TB.ToList();
+                    var listesi = context.Arac_TB.ToList();
                     var Aracim = context.Arac_TB.Where(p => p.ID == deger1).SingleOrDefault();
                     if (Aracim != null)
                     {
-                       
+
                         markaTE.Text = Aracim.Marka;
                         modelTE.Text = Aracim.Model;
                         aciklamaTE.Text = Aracim.Aciklama;
@@ -289,11 +311,11 @@ namespace OtoParkProject
                         plakaTE.Text = Aracim.Plaka;
 
                         aracTipi.Text = (context.AracTip_TB.Where(p => p.ID == Aracim.AracTipId).SingleOrDefault() != null) ? context.AracTip_TB.Where(p => p.ID == Aracim.AracTipId).SingleOrDefault().AracTip : "";
-                        cekiciFirma.Text = (context.CekiciFirma_TB.Where(p => p.ID == Aracim.CekiciFirmaId).SingleOrDefault() != null) ? context.CekiciFirma_TB.Where(p => p.ID == Aracim.CekiciFirmaId).SingleOrDefault().FirmaAd : ""; ;
+                        cekiciFirma.Text = (context.CekiciFirma_TB.Where(p => p.ID == Aracim.CekiciFirmaId).SingleOrDefault() != null) ? context.CekiciFirma_TB.Where(p => p.ID == Aracim.CekiciFirmaId).SingleOrDefault().FirmaAd : "";
                         kmUcretTE.Text = (Aracim.KmUcret).ToString();
                         yediEminMi.Checked = (bool)Aracim.YediEminMi;
                         aktiflik.Checked = (bool)Aracim.AktifMi;
-                        Cari carim = context.Cari_TB.Where(p => p.ID == Aracim.CariId).SingleOrDefault();
+                        Cari_TB carim = context.Cari_TB.Where(p => p.ID == Aracim.CariId).SingleOrDefault();
                         if (carim != null)
                         {
                             cariCB.Text = carim.TCNo;

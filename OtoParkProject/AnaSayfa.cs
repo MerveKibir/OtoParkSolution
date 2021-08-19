@@ -71,5 +71,17 @@ namespace OtoParkProject
             this.Close();
             Application.Exit();
         }
+
+        private void AbonelikEkleBtn_Click(object sender, EventArgs e)
+        {
+            AboneFrm frm = new AboneFrm();
+            FormKontrol(frm);
+        }
+
+        private void toolStripMenuItem31_Click(object sender, EventArgs e)
+        {
+            TarifeAyarları frm = new TarifeAyarları();
+            FormKontrol(frm);
+        }
     }
 }

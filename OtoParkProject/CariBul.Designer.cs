@@ -66,6 +66,8 @@ namespace OtoParkProject
             this.gridControl1.EmbeddedNavigator.Buttons.Edit.Visible = false;
             this.gridControl1.Location = new System.Drawing.Point(1, 48);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.MaximumSize = new System.Drawing.Size(1200, 700);
+            this.gridControl1.MinimumSize = new System.Drawing.Size(1200, 700);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1200, 700);
             this.gridControl1.TabIndex = 0;

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e00c0d5d56644c42ab7b43a5f2b13b0a" Name="Diagram1">
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Abonelik_TB" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Abonelik_Tip" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.AbonelikArac_TB" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Aboneliks" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.AbonelikTip_TB" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Arac_TB" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Arac_Tip" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Aracs" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.AracTip_TB" Width="1.5" PointX="8.75" PointY="8.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Cari_TB" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Caris" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.CekiciFirma_TB" Width="1.5" PointX="10.75" PointY="5.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.CekiciFirmas" Width="1.5" PointX="10.75" PointY="9.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.CekiciHareketleri_TB" Width="1.5" PointX="6.75" PointY="11.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.EhliyetBilgi_TB" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.EkipPolis_TB" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Fatura_TB" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.FaturaTip_TB" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.GelirTip_TB" Width="1.5" PointX="12.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Gider_TB" Width="1.5" PointX="12.75" PointY="10.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.GiderTip_TB" Width="1.5" PointX="8.75" PointY="13.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.KasaHareketleri_TB" Width="1.5" PointX="10.75" PointY="13.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Odeme_TB" Width="1.5" PointX="12.75" PointY="13.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Personel_TB" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Personels" Width="1.5" PointX="14.75" PointY="6.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Ruhsat1_TB" Width="1.5" PointX="14.75" PointY="12.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Ruhsat2_TB" Width="1.5" PointX="2.75" PointY="15.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Sirketler_TB" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Sirkets" Width="1.5" PointX="16.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Subeler_TB" Width="1.5" PointX="4.75" PointY="16.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Subes" Width="1.5" PointX="6.75" PointY="16.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Surucu_TB" Width="1.5" PointX="16.75" PointY="8.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Tarife_TB" Width="1.5" PointX="8.75" PointY="16.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Tarife_Tip" Width="1.5" PointX="16.75" PointY="12.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Tarifes" Width="1.5" PointX="16.75" PointY="15.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.TarifeTip_TB" Width="1.5" PointX="10.75" PointY="17.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.TrafikEkip_TB" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.YediEminCikisKayit_TB" Width="1.5" PointX="18.75" PointY="4.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.YediEminGirisKayit_TB" Width="1.5" PointX="18.75" PointY="9.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.YediEminHasar_TB" Width="1.5" PointX="18.75" PointY="16.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.Yetki_TB" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OtoPark_DatabaseModel1.YetkiTip_TB" Width="1.5" PointX="0.75" PointY="20.75" />
+        <AssociationConnector Association="OtoPark_DatabaseModel1.FK__Fatura_TB__Fatur__6477ECF3" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

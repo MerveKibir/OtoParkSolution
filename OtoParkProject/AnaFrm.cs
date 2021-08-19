@@ -45,24 +45,23 @@ namespace OtoParkProject
         {
             if (e.KeyCode == Keys.Enter)
             {
-
-                DatabaseContext context = new DatabaseContext();
-
                 if (context.Arac_TB.Any(x => x.Plaka == plakaTE.Text))
                 {
                     MessageBox.Show("Araç Kayıtlı");
-                    var liste = context.Arac_TB.Where(x => x.Plaka == plakaTE.Text).Single();        
-                        aracTanim.Text = liste.AracTanim;
-                        ehliyetSinifi.Text = liste.EhliyetSinifi;
-                        marka.Text = liste.Marka;
-                        model.Text = liste.Model;
-                        renk.Text = liste.Renk;
-                        aciklama.Text = liste.Aciklama;
-                        tarifeTip.Text = context.TarifeTip_TB.SingleOrDefault(x => x.ID == liste.AbonelikId).TarifeTip;
-                        tarifeBilgi.Text = (from tb in context.TarifeTip_TB
-                                            join t in context.Tarife_TB
-                                            on tb.ID equals t.TarifeTipId
-                                            select t.TarifeAd).Single();
+                    var liste = context.Arac_TB.Where(x => x.Plaka == plakaTE.Text).Single();
+                    aracTanim.Text = liste.AracTanim;
+                    ehliyetSinifi.Text = liste.EhliyetSinifi;
+                    marka.Text = liste.Marka;
+                    model.Text = liste.Model;
+                    renk.Text = liste.Renk;
+                    aciklama.Text = liste.Aciklama;
+                    int id = Convert.ToInt32(context.Arac_TB.Where(p => p.Plaka == plakaTE.Text));
+                    int tarifeid = Convert.ToInt32(context.AbonelikArac_TB.Where(p => p.aracId == id).SingleOrDefault().tarifeId);
+                    tarifeTip.Text = context.TarifeTip_TB.Where(p => p.ID == tarifeid).Single().TarifeTip;
+                    tarifeBilgi.Text = (from tb in context.TarifeTip_TB
+                                        join t in context.Tarife_TB
+                                        on tb.ID equals t.TarifeTipId
+                                        select t.TarifeAd).Single();
                 }
                 else
                 {

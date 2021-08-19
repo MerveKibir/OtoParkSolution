@@ -1,7 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraGrid.Columns;
 using OtoParkProject.Classes;
-using OtoParkProject.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +38,6 @@ namespace OtoParkProject
         }
         public int idBul(string tcNo)
         {
-            DatabaseContext context = new DatabaseContext();
             int id = (from a in context.Cari_TB
                       where a.TCNo == tcNo
                       select a.ID).Single();
@@ -82,7 +80,6 @@ namespace OtoParkProject
                     byte[] resim = br.ReadBytes((int)fs.Length);
                     br.Close();
                     fs.Close();
-                    DatabaseContext context = new DatabaseContext();
                 }
             }
             catch (Exception)
@@ -120,7 +117,7 @@ namespace OtoParkProject
         {
             if (adresTE != null && adTE != null && soyadTE != null && TCNoTE != null && dgmTE != null && cepTelTE != null)
             {
-                Cari newCari = new Cari();
+                Cari_TB newCari = new Cari_TB();
                 if (!context.Cari_TB.Any(x => x.AboneNo == aboneNoTE.Text))
                 {
                     try
@@ -157,7 +154,7 @@ namespace OtoParkProject
                         var liste2 = from upCari in context.Cari_TB
                                                   where upCari.TCNo == TCNoTE.Text
                                                   select upCari;
-                        foreach(Cari cari in liste2)
+                        foreach(Cari_TB cari in liste2)
                         {
                             cari.Ad = adTE.Text;
                             cari.Soyad = soyadTE.Text;

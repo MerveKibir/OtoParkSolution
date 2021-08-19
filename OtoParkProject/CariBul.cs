@@ -40,6 +40,8 @@ namespace OtoParkProject
             this.donecekDeger1 = B;
             this.DialogResult = DialogResult.OK;
             CariEkleFrm frm = new CariEkleFrm();
+            AboneFrm frm2 = new AboneFrm();
+            frm2.Refresh();
             frm.Refresh();
             this.Close();
         }

@@ -494,7 +494,7 @@ namespace OtoParkProject
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(137, 30);
             this.labelControl17.TabIndex = 98;
-            this.labelControl17.Text = "İş Yeri";
+            this.labelControl17.Text = "Ek Bilgi";
             // 
             // labelControl16
             // 
@@ -906,20 +906,20 @@ namespace OtoParkProject
             // cariidToolStripLabel
             // 
             this.cariidToolStripLabel.Name = "cariidToolStripLabel";
-            this.cariidToolStripLabel.Size = new System.Drawing.Size(49, 28);
+            this.cariidToolStripLabel.Size = new System.Drawing.Size(49, 24);
             this.cariidToolStripLabel.Text = "cariid:";
             // 
             // cariidToolStripTextBox
             // 
             this.cariidToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cariidToolStripTextBox.Name = "cariidToolStripTextBox";
-            this.cariidToolStripTextBox.Size = new System.Drawing.Size(100, 31);
+            this.cariidToolStripTextBox.Size = new System.Drawing.Size(100, 27);
             // 
             // fillBy1ToolStripButton
             // 
             this.fillBy1ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.fillBy1ToolStripButton.Name = "fillBy1ToolStripButton";
-            this.fillBy1ToolStripButton.Size = new System.Drawing.Size(56, 28);
+            this.fillBy1ToolStripButton.Size = new System.Drawing.Size(56, 24);
             this.fillBy1ToolStripButton.Text = "FillBy1";
             this.fillBy1ToolStripButton.Click += new System.EventHandler(this.fillBy1ToolStripButton_Click);
             // 
@@ -934,7 +934,7 @@ namespace OtoParkProject
             this.fillBy1ToolStripButton});
             this.fillBy1ToolStrip.Location = new System.Drawing.Point(221, 2);
             this.fillBy1ToolStrip.Name = "fillBy1ToolStrip";
-            this.fillBy1ToolStrip.Size = new System.Drawing.Size(210, 31);
+            this.fillBy1ToolStrip.Size = new System.Drawing.Size(210, 27);
             this.fillBy1ToolStrip.TabIndex = 102;
             this.fillBy1ToolStrip.Text = "fillBy1ToolStrip";
             // 
@@ -950,6 +950,8 @@ namespace OtoParkProject
             this.Controls.Add(this.panelControl3);
             this.Controls.Add(this.layoutControl2);
             this.Controls.Add(this.fillBy1ToolStrip);
+            this.MaximumSize = new System.Drawing.Size(1572, 981);
+            this.MinimumSize = new System.Drawing.Size(1200, 600);
             this.Name = "CariEkleFrm";
             this.ShowMdiChildCaptionInParentTitle = true;
             this.Text = "CariEkleFrm";

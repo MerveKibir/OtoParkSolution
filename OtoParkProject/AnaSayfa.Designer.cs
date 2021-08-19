@@ -133,7 +133,7 @@ namespace OtoParkProject
             this.layoutControl1.Controls.Add(this.AracEkleBtn);
             this.layoutControl1.Controls.Add(this.CariEkleBtn);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 28);
+            this.layoutControl1.Location = new System.Drawing.Point(0, 30);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsPrint.AppearanceGroupCaption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.layoutControl1.OptionsPrint.AppearanceGroupCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
@@ -143,7 +143,7 @@ namespace OtoParkProject
             this.layoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.layoutControl1.OptionsPrint.AppearanceGroupCaption.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(180, 823);
+            this.layoutControl1.Size = new System.Drawing.Size(180, 821);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -154,18 +154,18 @@ namespace OtoParkProject
             this.panelControl1.MinimumSize = new System.Drawing.Size(118, 118);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(118, 118);
-            this.panelControl1.TabIndex = 14;
+            this.panelControl1.TabIndex = 1;
             // 
             // CksBtn
             // 
             this.CksBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.CksBtn.Image = ((System.Drawing.Image)(resources.GetObject("CksBtn.Image")));
-            this.CksBtn.Location = new System.Drawing.Point(47, 726);
+            this.CksBtn.Location = new System.Drawing.Point(47, 724);
             this.CksBtn.MaximumSize = new System.Drawing.Size(80, 80);
             this.CksBtn.MinimumSize = new System.Drawing.Size(75, 75);
             this.CksBtn.Name = "CksBtn";
             this.CksBtn.Size = new System.Drawing.Size(75, 75);
-            this.CksBtn.TabIndex = 13;
+            this.CksBtn.TabIndex = 4;
             this.CksBtn.Text = "Çıkış";
             this.CksBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.CksBtn.UseVisualStyleBackColor = false;
@@ -175,26 +175,27 @@ namespace OtoParkProject
             // 
             this.AbonelikEkleBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.AbonelikEkleBtn.Image = ((System.Drawing.Image)(resources.GetObject("AbonelikEkleBtn.Image")));
-            this.AbonelikEkleBtn.Location = new System.Drawing.Point(47, 455);
+            this.AbonelikEkleBtn.Location = new System.Drawing.Point(47, 454);
             this.AbonelikEkleBtn.MaximumSize = new System.Drawing.Size(80, 80);
             this.AbonelikEkleBtn.MinimumSize = new System.Drawing.Size(75, 75);
             this.AbonelikEkleBtn.Name = "AbonelikEkleBtn";
             this.AbonelikEkleBtn.Size = new System.Drawing.Size(75, 77);
-            this.AbonelikEkleBtn.TabIndex = 12;
+            this.AbonelikEkleBtn.TabIndex = 0;
             this.AbonelikEkleBtn.Text = "Abonelik Ekle";
             this.AbonelikEkleBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.AbonelikEkleBtn.UseVisualStyleBackColor = false;
+            this.AbonelikEkleBtn.Click += new System.EventHandler(this.AbonelikEkleBtn_Click);
             // 
             // AracEkleBtn
             // 
             this.AracEkleBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.AracEkleBtn.Image = global::OtoParkProject.Properties.Resources._6646605_add_and_car_plus_transport_icon__1_;
-            this.AracEkleBtn.Location = new System.Drawing.Point(47, 636);
+            this.AracEkleBtn.Location = new System.Drawing.Point(47, 635);
             this.AracEkleBtn.MaximumSize = new System.Drawing.Size(80, 80);
             this.AracEkleBtn.MinimumSize = new System.Drawing.Size(75, 75);
             this.AracEkleBtn.Name = "AracEkleBtn";
-            this.AracEkleBtn.Size = new System.Drawing.Size(75, 76);
-            this.AracEkleBtn.TabIndex = 11;
+            this.AracEkleBtn.Size = new System.Drawing.Size(75, 75);
+            this.AracEkleBtn.TabIndex = 3;
             this.AracEkleBtn.Text = "Araç Ekle";
             this.AracEkleBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.AracEkleBtn.UseVisualStyleBackColor = false;
@@ -204,12 +205,12 @@ namespace OtoParkProject
             // 
             this.CariEkleBtn.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.CariEkleBtn.Image = ((System.Drawing.Image)(resources.GetObject("CariEkleBtn.Image")));
-            this.CariEkleBtn.Location = new System.Drawing.Point(47, 546);
+            this.CariEkleBtn.Location = new System.Drawing.Point(47, 545);
             this.CariEkleBtn.MaximumSize = new System.Drawing.Size(80, 80);
             this.CariEkleBtn.MinimumSize = new System.Drawing.Size(75, 75);
             this.CariEkleBtn.Name = "CariEkleBtn";
             this.CariEkleBtn.Size = new System.Drawing.Size(75, 76);
-            this.CariEkleBtn.TabIndex = 10;
+            this.CariEkleBtn.TabIndex = 2;
             this.CariEkleBtn.Text = "Cari Ekle";
             this.CariEkleBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.CariEkleBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -242,13 +243,13 @@ namespace OtoParkProject
             this.emptySpaceItem14,
             this.layoutControlItem5});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(180, 823);
+            this.Root.Size = new System.Drawing.Size(180, 821);
             this.Root.TextVisible = false;
             // 
             // emptySpaceItem4
             // 
             this.emptySpaceItem4.AllowHotTrack = false;
-            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 524);
+            this.emptySpaceItem4.Location = new System.Drawing.Point(0, 523);
             this.emptySpaceItem4.MaxSize = new System.Drawing.Size(140, 10);
             this.emptySpaceItem4.MinSize = new System.Drawing.Size(140, 10);
             this.emptySpaceItem4.Name = "emptySpaceItem4";
@@ -259,7 +260,7 @@ namespace OtoParkProject
             // emptySpaceItem6
             // 
             this.emptySpaceItem6.AllowHotTrack = false;
-            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 614);
+            this.emptySpaceItem6.Location = new System.Drawing.Point(0, 613);
             this.emptySpaceItem6.MaxSize = new System.Drawing.Size(140, 10);
             this.emptySpaceItem6.MinSize = new System.Drawing.Size(140, 10);
             this.emptySpaceItem6.Name = "emptySpaceItem6";
@@ -270,7 +271,7 @@ namespace OtoParkProject
             // emptySpaceItem1
             // 
             this.emptySpaceItem1.AllowHotTrack = false;
-            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 793);
+            this.emptySpaceItem1.Location = new System.Drawing.Point(0, 791);
             this.emptySpaceItem1.Name = "emptySpaceItem1";
             this.emptySpaceItem1.Size = new System.Drawing.Size(160, 10);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
@@ -278,7 +279,7 @@ namespace OtoParkProject
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.CariEkleBtn;
-            this.layoutControlItem3.Location = new System.Drawing.Point(35, 534);
+            this.layoutControlItem3.Location = new System.Drawing.Point(35, 533);
             this.layoutControlItem3.Name = "layoutControlItem3";
             this.layoutControlItem3.Size = new System.Drawing.Size(79, 80);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
@@ -287,16 +288,16 @@ namespace OtoParkProject
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.AracEkleBtn;
-            this.layoutControlItem4.Location = new System.Drawing.Point(35, 624);
+            this.layoutControlItem4.Location = new System.Drawing.Point(35, 623);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(79, 80);
+            this.layoutControlItem4.Size = new System.Drawing.Size(79, 79);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // emptySpaceItem9
             // 
             this.emptySpaceItem9.AllowHotTrack = false;
-            this.emptySpaceItem9.Location = new System.Drawing.Point(0, 534);
+            this.emptySpaceItem9.Location = new System.Drawing.Point(0, 533);
             this.emptySpaceItem9.MinSize = new System.Drawing.Size(1, 1);
             this.emptySpaceItem9.Name = "emptySpaceItem9";
             this.emptySpaceItem9.Size = new System.Drawing.Size(35, 80);
@@ -306,7 +307,7 @@ namespace OtoParkProject
             // emptySpaceItem3
             // 
             this.emptySpaceItem3.AllowHotTrack = false;
-            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 704);
+            this.emptySpaceItem3.Location = new System.Drawing.Point(0, 702);
             this.emptySpaceItem3.MaxSize = new System.Drawing.Size(140, 10);
             this.emptySpaceItem3.MinSize = new System.Drawing.Size(140, 10);
             this.emptySpaceItem3.Name = "emptySpaceItem3";
@@ -317,17 +318,17 @@ namespace OtoParkProject
             // emptySpaceItem10
             // 
             this.emptySpaceItem10.AllowHotTrack = false;
-            this.emptySpaceItem10.Location = new System.Drawing.Point(0, 624);
+            this.emptySpaceItem10.Location = new System.Drawing.Point(0, 623);
             this.emptySpaceItem10.MinSize = new System.Drawing.Size(1, 1);
             this.emptySpaceItem10.Name = "emptySpaceItem10";
-            this.emptySpaceItem10.Size = new System.Drawing.Size(35, 80);
+            this.emptySpaceItem10.Size = new System.Drawing.Size(35, 79);
             this.emptySpaceItem10.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem10.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.AbonelikEkleBtn;
-            this.layoutControlItem1.Location = new System.Drawing.Point(35, 443);
+            this.layoutControlItem1.Location = new System.Drawing.Point(35, 442);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(79, 81);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
@@ -336,7 +337,7 @@ namespace OtoParkProject
             // emptySpaceItem11
             // 
             this.emptySpaceItem11.AllowHotTrack = false;
-            this.emptySpaceItem11.Location = new System.Drawing.Point(0, 443);
+            this.emptySpaceItem11.Location = new System.Drawing.Point(0, 442);
             this.emptySpaceItem11.MinSize = new System.Drawing.Size(1, 1);
             this.emptySpaceItem11.Name = "emptySpaceItem11";
             this.emptySpaceItem11.Size = new System.Drawing.Size(35, 81);
@@ -346,7 +347,7 @@ namespace OtoParkProject
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.CksBtn;
-            this.layoutControlItem2.Location = new System.Drawing.Point(35, 714);
+            this.layoutControlItem2.Location = new System.Drawing.Point(35, 712);
             this.layoutControlItem2.Name = "layoutControlItem2";
             this.layoutControlItem2.Size = new System.Drawing.Size(79, 79);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
@@ -355,7 +356,7 @@ namespace OtoParkProject
             // emptySpaceItem13
             // 
             this.emptySpaceItem13.AllowHotTrack = false;
-            this.emptySpaceItem13.Location = new System.Drawing.Point(0, 714);
+            this.emptySpaceItem13.Location = new System.Drawing.Point(0, 712);
             this.emptySpaceItem13.MinSize = new System.Drawing.Size(1, 1);
             this.emptySpaceItem13.Name = "emptySpaceItem13";
             this.emptySpaceItem13.Size = new System.Drawing.Size(35, 79);
@@ -365,7 +366,7 @@ namespace OtoParkProject
             // emptySpaceItem7
             // 
             this.emptySpaceItem7.AllowHotTrack = false;
-            this.emptySpaceItem7.Location = new System.Drawing.Point(114, 443);
+            this.emptySpaceItem7.Location = new System.Drawing.Point(114, 442);
             this.emptySpaceItem7.Name = "emptySpaceItem7";
             this.emptySpaceItem7.Size = new System.Drawing.Size(46, 81);
             this.emptySpaceItem7.TextSize = new System.Drawing.Size(0, 0);
@@ -373,7 +374,7 @@ namespace OtoParkProject
             // emptySpaceItem2
             // 
             this.emptySpaceItem2.AllowHotTrack = false;
-            this.emptySpaceItem2.Location = new System.Drawing.Point(114, 534);
+            this.emptySpaceItem2.Location = new System.Drawing.Point(114, 533);
             this.emptySpaceItem2.Name = "emptySpaceItem2";
             this.emptySpaceItem2.Size = new System.Drawing.Size(46, 80);
             this.emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
@@ -381,15 +382,15 @@ namespace OtoParkProject
             // emptySpaceItem5
             // 
             this.emptySpaceItem5.AllowHotTrack = false;
-            this.emptySpaceItem5.Location = new System.Drawing.Point(114, 624);
+            this.emptySpaceItem5.Location = new System.Drawing.Point(114, 623);
             this.emptySpaceItem5.Name = "emptySpaceItem5";
-            this.emptySpaceItem5.Size = new System.Drawing.Size(46, 80);
+            this.emptySpaceItem5.Size = new System.Drawing.Size(46, 79);
             this.emptySpaceItem5.TextSize = new System.Drawing.Size(0, 0);
             // 
             // emptySpaceItem12
             // 
             this.emptySpaceItem12.AllowHotTrack = false;
-            this.emptySpaceItem12.Location = new System.Drawing.Point(114, 714);
+            this.emptySpaceItem12.Location = new System.Drawing.Point(114, 712);
             this.emptySpaceItem12.Name = "emptySpaceItem12";
             this.emptySpaceItem12.Size = new System.Drawing.Size(46, 79);
             this.emptySpaceItem12.TextSize = new System.Drawing.Size(0, 0);
@@ -399,7 +400,7 @@ namespace OtoParkProject
             this.emptySpaceItem14.AllowHotTrack = false;
             this.emptySpaceItem14.Location = new System.Drawing.Point(0, 122);
             this.emptySpaceItem14.Name = "emptySpaceItem14";
-            this.emptySpaceItem14.Size = new System.Drawing.Size(160, 321);
+            this.emptySpaceItem14.Size = new System.Drawing.Size(160, 320);
             this.emptySpaceItem14.TextSize = new System.Drawing.Size(0, 0);
             // 
             // layoutControlItem5
@@ -454,28 +455,28 @@ namespace OtoParkProject
             // 
             this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem2.Text = "Abone Kayıt";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem3.Text = "Abone Bul";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem4.Text = "Giriş Bariyeri Aç";
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(214, 26);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem5.Text = "Çıkış Bariyeri Aç";
             // 
             // toolStripMenuItem6
@@ -492,21 +493,21 @@ namespace OtoParkProject
             // 
             this.toolStripMenuItem7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem7.Image")));
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(193, 26);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem7.Text = "İç Yıkama";
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem8.Image")));
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(193, 26);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem8.Text = "Dış Yıkama";
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem9.Image")));
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(193, 26);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem9.Text = "İç Dış Yıkama";
             // 
             // toolStripMenuItem10
@@ -626,13 +627,13 @@ namespace OtoParkProject
             // toolStripMenuItem25
             // 
             this.toolStripMenuItem25.Name = "toolStripMenuItem25";
-            this.toolStripMenuItem25.Size = new System.Drawing.Size(203, 26);
+            this.toolStripMenuItem25.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem25.Text = "Oturumu Kapat";
             // 
             // toolStripMenuItem26
             // 
             this.toolStripMenuItem26.Name = "toolStripMenuItem26";
-            this.toolStripMenuItem26.Size = new System.Drawing.Size(203, 26);
+            this.toolStripMenuItem26.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem26.Text = "Şifre Değiştir";
             // 
             // toolStripMenuItem27
@@ -669,6 +670,7 @@ namespace OtoParkProject
             this.toolStripMenuItem31.Name = "toolStripMenuItem31";
             this.toolStripMenuItem31.Size = new System.Drawing.Size(240, 26);
             this.toolStripMenuItem31.Text = "Tarife Ayarları";
+            this.toolStripMenuItem31.Click += new System.EventHandler(this.toolStripMenuItem31_Click);
             // 
             // toolStripMenuItem32
             // 
@@ -681,13 +683,13 @@ namespace OtoParkProject
             // toolStripMenuItem33
             // 
             this.toolStripMenuItem33.Name = "toolStripMenuItem33";
-            this.toolStripMenuItem33.Size = new System.Drawing.Size(160, 26);
+            this.toolStripMenuItem33.Size = new System.Drawing.Size(224, 26);
             this.toolStripMenuItem33.Text = "Hakkında";
             // 
             // menüToolStripMenuItem
             // 
             this.menüToolStripMenuItem.Name = "menüToolStripMenuItem";
-            this.menüToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.menüToolStripMenuItem.Size = new System.Drawing.Size(60, 26);
             this.menüToolStripMenuItem.Text = "Menü";
             // 
             // menuStrip1
@@ -698,7 +700,7 @@ namespace OtoParkProject
             this.menüToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1238, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1238, 30);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
